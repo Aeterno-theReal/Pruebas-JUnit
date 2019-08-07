@@ -44,6 +44,9 @@ class CocheTest {
 	@Test
 	void testDeCreacion() {
 		//fail("Not yet implemented");
+		Coche c=new Coche("Peugeot","208", 2008);
+		if(c==null)
+			fail("El coche no se ha creado correctamente");
 	}
 	
 	@Test

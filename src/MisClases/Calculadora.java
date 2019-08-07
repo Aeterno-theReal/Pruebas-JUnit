@@ -41,5 +41,36 @@ public class Calculadora {
 		
 		System.out.println("La resta es: " + resta);
 	}
+	
+	
+	static Scanner teclado;
+	
+	public static void inicializarScaner()
+	{
+		teclado=new Scanner(System.in);
+	}
+	
+	
+	
+	public static void sumaNumeros()
+	{
+		//Por consola debe pedir números enteros y cuando reciba un 0, debe mostrar la suma de todos ellos
+		
+		int num1=0, suma=0;
+		
+		Scanner teclado=new Scanner(System.in);
+
+		
+		do {
+			num1=teclado.nextInt();
+			teclado.nextLine();
+			
+			suma+=num1;
+		
+
+		}while(num1!=0);
+		
+		System.out.println("La suma total es: " + suma);
+	}
 
 }
